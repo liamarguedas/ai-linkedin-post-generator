@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[2]
 
-def load_system_prompt(prompt_file; str = "SYSTEM_PROMPT.md" ):
+def load_system_prompt(prompt_file="SYSTEM_PROMPT.md" ):
 
     sys_prompt_path = ROOT /"source"/ "system" / "prompt" / prompt_file 
 

@@ -16,7 +16,7 @@ class BaseAgent(BaseModel):
     def add_system_prompt(self, prompt: str):
         self._system_prompt = prompt
         
-    def add_tool(self, tool: Callable | List[Callable]):
+    def add_tool(self, tool):
 
         if isinstance(tool, List):
             self._tools.extend(tool)
